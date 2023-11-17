@@ -1,0 +1,84 @@
+QDMNodeContentWidget {
+  background: transparent;
+}
+QDMNodeContentWidget QFrame {
+  background: transparent;
+}
+QDMNodeContentWidget QTextEdit,
+QDMNodeContentWidget QLineEdit {
+  background: #666;
+  color: #fff;
+}
+QDMNodeContentWidget QLabel {
+  color: #e0e0e0;
+}
+QDMNodeContentWidget QLabel#calc_node_bg,
+QDMNodeContentWidget QLabel#calc_node_mul,
+QDMNodeContentWidget QLabel#calc_node_div {
+  background: transparent;
+  height: 0px;
+  color: #373737;
+  font-size: 72px;
+  max-height: 49px;
+  min-height: 49px;
+  padding-left: 94px;
+}
+QDMNodeContentWidget QLabel#calc_node_mul,
+QDMNodeContentWidget QLabel#calc_node_div {
+  padding-top: 12px;
+}
+QDMNodeContentWidget QLabel#calc_node_output {
+  min-width: 150px;
+  max-width: 150px;
+  min-height: 45px;
+  max-height: 45px;
+  margin-left: 10px;
+  margin-top: 5px;
+  font-size: 28px;
+}
+QDMNodeContentWidget QLineEdit#calc_node_input {
+  width: 140px;
+  height: 36px;
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 28px;
+}
+QGraphicsView {
+  selection-background-color: #fff;
+}
+
+
+QTableView {
+  color: #ffffff; /* 텍스트 색상*/
+}
+
+
+/* 컬럼 헤더의 스타일 */
+QHeaderView::section {
+  background-color: #646464; /* 헤더의 배경색 변경 */
+  color: #ffffff; /* 헤더의 텍스트 색상 변경 */
+  border-right : 0.5px solid #ffffff; /* 헤더의 테두리 색상 변경 */
+  border-bottom:  0.5px solid #ffffff; /* 위쪽 테두리 색상 */
+  padding: 4px;
+  font-size: 14px; /*  필요에 따라 폰트 크기 조정 */ 
+}
+
+/* 컨버전 헤더의 스타일 */
+QTableView QTableCornerButton::section {
+  background-color: #646464; /* 배경색 변경 */
+  border-right : 0.5px solid #ffffff; /* 헤더의 테두리 색상 변경 */
+  /* border: 0.5px solid #ffffff; 테두리 색상 변경 */
+}
+
+/* 셀의 경계선 색상 변경 */
+QTableView::item {
+  border-bottom:  0.5px solid #ffffff; /* 위쪽 테두리 색상 */
+  border-right: 0.5px solid #ffffff; /* 오른쪽 테두리 색상 */
+}
+
+/* 선택된 셀들의 스타일 */
+QTableView::item:selected {
+  background-color: #555555; /* 선택된 셀의 배경색 */
+  color: #ffffff; /* 선택된 셀의 텍스트 색상 변경 */
+}
+
